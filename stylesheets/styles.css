@@ -1006,5 +1006,6 @@ footer {
     left: auto;
     bottom: auto;
     width: auto;
+    white-space:nowrap;
   }
 }
