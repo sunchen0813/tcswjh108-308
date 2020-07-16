@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="stylesheets/github-dark.css">
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/main.js"></script>
+    <script>
+      var thisurl = new URL(location.href);
+      thisurl.hash = '#top'
+      $('header').before($(`<a href="${ thisurl.href }">`));
+    </script>
     <!--[if lt IE 9]>
       <script src="/js/html5shiv.min.js"></script>
     <![endif]-->
@@ -16,7 +21,6 @@
 
   </head>
   <body>
-
       <header>
         <h1>308資料庫</h1>
         <p></p>
