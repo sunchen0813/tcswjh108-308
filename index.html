@@ -12,11 +12,7 @@
     <script src="/js/main.js"></script>
     -->
     <link rel="stylesheet" href="/css/main.css">
-    <script>
-      var thisurl = new URL(location.href);
-      thisurl.hash = '#top'
-      $('header').before($(`<a href="${ thisurl.href }">`));
-    </script>
+    <script src="/js/page.js"></script>
     <!--[if lt IE 9]>
       <script src="/js/html5shiv.min.js"></script>
     <![endif]-->
@@ -24,6 +20,8 @@
 
   </head>
   <body>
+    <div id="load"></div>
+    <main>
       <header>
         <h1>308資料庫</h1>
         <p></p>
@@ -35,18 +33,18 @@
         <a href="https://github.com/tcswjh108-308" class="button fork"><strong>View On GitHub</strong></a>
       </div><!-- end banner -->
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <p>歡迎光臨308資料庫！</p>
-      </section>
-      <footer>
-        <p><small>此網站架於GitHub Pages｜作者：陳昱辰｜<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW">CC BY-NC-ND 4.0</a></small></p>
-      </footer>
-    </div>
+      <div class="wrapper">
+        <nav>
+          <ul></ul>
+        </nav>
+        <section>
+          <p>歡迎光臨308資料庫！</p>
+        </section>
+        <footer>
+          <p><small>此網站架於GitHub Pages｜作者：陳昱辰｜<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW">CC BY-NC-ND 4.0</a></small></p>
+        </footer>
+      </div>
+    </main>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
   </body>
 </html>
