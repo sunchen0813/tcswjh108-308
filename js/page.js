@@ -1,0 +1,1 @@
+$(document).ready(function(){var thisurl = new URL(location.href);thisurl.hash = '#top';$('header').before($(`<a href="${thisurl.href}">`));$('<div>').append($('div#load')[0]).html();$('main').attr('style', 'display:block;');})
