@@ -91,4 +91,5 @@ footer {
     float: none;
     line-height: 16px;
     display: block;
+    white-space:nowrap;
 }
