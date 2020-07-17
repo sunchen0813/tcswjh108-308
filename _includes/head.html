@@ -15,7 +15,7 @@
     <!--[if lt IE 9]><script src="{{ "/js/html5shiv.min.js" | prepend: site.baseurl }}"></script><![endif]-->
 	
     <!--css-->
-    <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl | append: ?time{{ page.modifiedon | date: 'f' }} }}">
+    <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}?time={{ page.modifiedon | date: 'f' }}">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
