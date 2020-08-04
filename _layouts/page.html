@@ -1,10 +1,10 @@
 ---
 layout: def
 ---
-<script src="/js/log.js"></scrtpt>
+<script src="/js/log.js"></script>
 <span id="load_page_js"></span>
 <script>
-$('span#load_page_js').after($(`<script src=/js/${decodeURIComponent(location.pathname)}`));
+$('span#load_page_js').after($(`<script src="/pagejs${decodeURIComponent(location.pathname)}.js">`));
 $('<div>').append($('span#load_page_js')).html()
 </scrtpt>
 <noscript>
