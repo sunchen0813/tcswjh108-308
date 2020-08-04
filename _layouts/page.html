@@ -2,11 +2,7 @@
 layout: def
 ---
 <script src="/js/log.js"></script>
-<span id="load_page_js"></span>
-<script>
-$('span#load_page_js').after($(`<script src="/pagejs${decodeURIComponent(location.pathname)}.js">`));
-$('<div>').append($('span#load_page_js')).html()
-</scrtpt>
+<script>$(document).ready(function(){$.ajax(`/pagejs${decodeURIComponent(location.pathname).replace(/\.html$/,'')}.js`)})</script>
 <noscript>
 <style>#section_h2,#section{display:none;}</style>
 很抱歉，欲訪問此頁請開啟JavaScript
