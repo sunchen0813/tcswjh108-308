@@ -1,0 +1,13 @@
+---
+layout: def
+---
+<script src="/js/log.js"></scrtpt>
+<span id="load_page_js"></span>
+<script>
+$('span#load_page_js').after($(`<script src=/js/${decodeURIComponent(location.pathname)}`));
+$('<div>').append($('span#load_page_js')).html()
+</scrtpt>
+<noscript>
+<style>#section_h2,#section{display:none;}</style>
+很抱歉，欲訪問此頁請開啟JavaScript
+</noscript>
